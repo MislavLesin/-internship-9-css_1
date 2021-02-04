@@ -4,6 +4,7 @@ body
 }
 .navbar
 {
+    z-index: 1;
     position: fixed;
     margin: 0;
     left: 0;
@@ -36,6 +37,8 @@ body
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
+    height: calc(100vh - 38px);
 }
 .dump-image
 {
@@ -88,20 +91,35 @@ body
 .secont-page
 {
     height: 100vh;
-    display: flex;
-    flex-direction: column;
     align-items: center;
 }
 .second-page-first
 {
-    background-color: gray;
+    background-color: darkgrey;
     height: 50vh;
-    width: max-content;
+}
+.second-page-first-corner
+{
+    text-align: left;
+    width: 300px;
+    background-color: gray;
+    position: relative;
+    top: 45px;
+    left: 45px;
+    padding: 5px 10px;
 }
 .second-page-text
 {
-    width: 45vw;
+    top: -150px;
     line-height: 24px;
+    position: relative;
+    display: inline-block;
+    width: 40vw;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: white;
+
 }
 .second-page-text h1
 {
@@ -116,4 +134,5 @@ body
     background-color: white;
     height: 35px;
     width: 135px;
+    border-width: 2px;
 }
