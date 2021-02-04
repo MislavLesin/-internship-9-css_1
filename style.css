@@ -1,138 +1,130 @@
-body
-{
-    margin: 0;
+body {
+  margin: 0;
 }
-.navbar
-{
-    z-index: 1;
-    position: fixed;
-    margin: 0;
-    left: 0;
-    top: 0;
-    right: 0;
-    display: flex;
-    justify-content: space-between;
-    background-color: orange;
-    padding: 10px;
+.navbar {
+  font-size: 17px;
+  z-index: 2;
+  position: fixed;
+  margin: 0;
+  left: 0;
+  top: 0;
+  right: 0;
+  display: flex;
+  justify-content: space-between;
+  background-color: orange;
+  padding: 10px;
 }
-.first-page
-{
-    margin: 0;
-    
+.first-page {
+  font-family: Lucida Console;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  height: calc(100vh - 151px);
 }
-.navbar button
-{
-    color: white;
-    text-decoration: none;
-    background-color: orange;
-    border: none;
+.navbar button {
+  color: white;
+  text-decoration: none;
+  background-color: orange;
+  border: none;
 }
-.navbar button:hover
-{
-    color: black;
+.navbar button:hover {
+  color: black;
 }
-.content-wrapper
-{
-    margin-top: 48px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    height: calc(100vh - 38px);
-}
-.dump-image
-{
-   height: 90px;
-   margin-left: auto;
+
+.dump-image {
+  height: 70px;
+  margin-left: auto;
   margin-right: auto;
-  width: 300px;
+  width: 230px;
   display: block;
 }
-.top-container
-{
-    margin-top: 250px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+.top-container {
+  width: 30vw;
+  margin-top: 250px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: calc(100vh - 40px);
 }
-.top-container h1
-{
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 120px;
-    margin: 0;
-    font-weight: 300;
+.top-container h1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 80px;
+  font-weight: 100;
+  margin: 0;
+  margin: 15px 0px;
 }
-.top-container p
-{
-    font-size: 28px;
+.top-container p {
+  font-size: 18px;
+  margin: 25px 0px;
 }
-.floating-footer
-{
-    position: absolute;
-    bottom: 0;
-    background-color: black;
-    color: blanchedalmond;
-    text-align: center;
-    align-content: center;
-    padding-left: 180px;
-    padding-right: 180px;
-    padding-top: 10px;
-    padding-bottom: 20px;
-}
-.floating-footer button
-{
-    border: thin;
-    border-style: solid;
-    background-color: black;
-    color: yellow;
-    height: 35px;
-    width: 135px;
-}
-.secont-page
-{
-    height: 100vh;
-    align-items: center;
-}
-.second-page-first
-{
-    background-color: darkgrey;
-    height: 50vh;
-}
-.second-page-first-corner
-{
-    text-align: left;
-    width: 300px;
-    background-color: gray;
-    position: relative;
-    top: 45px;
-    left: 45px;
-    padding: 5px 10px;
-}
-.second-page-text
-{
-    top: -150px;
-    line-height: 24px;
-    position: relative;
-    display: inline-block;
-    width: 40vw;
-    margin-left: 50%;
-    transform: translateX(-50%);
-    z-index: 1;
-    background-color: white;
 
+.second-page {
+  font-family: Monaco;
+  height: 200vh;
 }
-.second-page-text h1
-{
-    line-height: normal;
-    text-align: center;
-    font-size: 38px;
+.second-page-first {
+  height: 50vh;
 }
-.second-page-text button
-{
-    border: thin;
-    border-style: solid;
-    background-color: white;
-    height: 35px;
-    width: 135px;
-    border-width: 2px;
+.floating-footer {
+  font-size: 20px;
+  z-index: 1;
+  position: sticky;
+  top: 40px;
+  background-color: black;
+  color: blanchedalmond;
+  text-align: center;
+  align-content: center;
+  padding-left: 180px;
+  padding-right: 180px;
+  padding-top: 10px;
+  padding-bottom: 20px;
+}
+.floating-footer button {
+  border: thin;
+  border-style: solid;
+  background-color: black;
+  color: yellow;
+  height: 35px;
+  width: 135px;
+}
+.second-page-first-corner {
+  text-align: left;
+  width: 300px;
+  background-color: gray;
+  position: relative;
+  top: 45px;
+  left: 45px;
+  padding: 5px 10px;
+}
+.second-page-text {
+  line-height: 24px;
+  position: relative;
+  display: inline-block;
+  width: 34vw;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+  background-color: white;
+  font-size: larger;
+  padding: 40px 50px;
+}
+.second-page-text h1 {
+  line-height: normal;
+  text-align: center;
+  font-size: 38px;
+}
+.second-page-text button {
+  border: thin;
+  border-style: solid;
+  background-color: white;
+  height: 35px;
+  width: 135px;
+  border-width: 2px;
+}
+.gray-background {
+  background-color: gray;
+  position: absolute;
+  top: calc(100vh - 40px);
+  height: 50vh;
+  width: 100%;
 }
